@@ -71,6 +71,34 @@ Section E -->
       />
     </div>
 
+    <!-- Today's Student Combo Section -->
+    <section class="page-section">
+      <h1 class="page-title">Today's Student Combo</h1>
+      <p class="page-subtitle">Show your student ID at the counter to grab these daily specials</p>
+
+      <div class="gallery-grid">
+        <div class="info-card">
+          <h2>Quick Study Fuel</h2>
+          <p>1 Simple Biryani + 1 Hot Chai</p>
+          <p><strong>Rs. 200</strong> (Save Rs. 40)</p>
+        </div>
+        <div class="info-card">
+          <h2>Lab Day Special</h2>
+          <p>1 Chicken Biryani with Kabab + 1 Hot Chai</p>
+          <p><strong>Rs. 330</strong> (Save Rs. 60)</p>
+        </div>
+        <div class="info-card">
+          <h2>Group Project Deal</h2>
+          <p>2 Chicken Biryanis + 2 Hot Chais</p>
+          <p><strong>Rs. 580</strong> (Save Rs. 100)</p>
+        </div>
+      </div>
+
+      <div class="corder">
+        <button class="order" onclick="sayCombo()">Claim Student Combo</button>
+      </div>
+    </section>
+
     <footer>
       <h1 class="fcontact">Contact Us</h1>
       <p><a href="mailto:something@gmail.com">something@gmail.com</a></p>
@@ -85,6 +113,10 @@ Section E -->
       function sayStart() {
         console.log("Say Start button was clicked");
         window.alert("Scroll Down!");
+      }
+      function sayCombo() {
+        console.log("Student Combo button was clicked");
+        window.alert("Student Combo Claimed! Show your student ID at the counter for your discount.");
       }
     </script>
   </body>
