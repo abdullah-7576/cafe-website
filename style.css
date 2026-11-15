@@ -58,6 +58,9 @@ header div p a:hover {
 }
 
 .btn:hover {
+  background-color: transparent;
+  border: 2px solid purple;
+  color: black;
   box-shadow: rgba(0, 0, 0, 0.301) 0px 5px 10px;
   cursor: pointer;
 }
