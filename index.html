@@ -1,0 +1,81 @@
+<!-- Muhammad Abdullah
+26i-3255
+Section E -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cafe Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <header>
+        <div class="subnav">
+            <p>Home</p>
+            <p>Menu</p>
+            <p>Contact</p>
+        </div>
+        <button class="btn" onclick="sayStart()">Get Started</button>
+      </header>
+      <section class = "mainbody">
+        <div>
+            <h1 class="maintext">The taste that you will never forget</h1>
+        </div>
+        <img src="https://i.pinimg.com/736x/1a/59/f0/1a59f0e988c227075ce7a6e261f9f362.jpg" alt="Chicken biryani">       
+      </section>
+
+      <section class="table">
+        <h1 class="tabletext">Food Menu</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Chicken biryani</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Chicken Biryani with kabab</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>Simple Biryani</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td>Simple Biryani with kabab</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Chai</td>
+                <td>90</td>
+            </tr>
+        </table>
+    </section>
+    <div class="corder">
+        <button class="order" onclick="sayHello()">Order Now</button>
+    </div>
+    <div class="ccafeimage">
+        <img src="https://media.istockphoto.com/id/1428594094/photo/empty-coffee-shop-interior-with-wooden-tables-coffee-maker-pastries-and-pendant-lights.jpg?s=612x612&w=0&k=20&c=dMqeYCJDs3BeBP_jv93qHRISDt-54895SPoVc6_oJt4=" alt="" class="cafeimage">
+    </div>
+    <footer>
+        <h1 class="fcontact">Contact Us</h1>
+        <p><a href="">something@gmail.com</a></p>
+        <p>Thank you for visiting our website</p>
+    </footer>
+  </body>
+  <button >Say Hello</button>
+
+<script>
+  function sayHello() {
+    console.log("Say Order button was clicked");
+    window.alert("Order Confirmed");
+  }
+  function sayStart() {
+    console.log("Say Start button was clicked");
+    window.alert("Scroll Down!");
+  }
+
+</script>
+
+</html>
