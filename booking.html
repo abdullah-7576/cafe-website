@@ -1,0 +1,54 @@
+<!-- Muhammad Abdullah
+26i-3255
+Section E -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cafe Shop - Table Reservation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="subnav">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="gallery.html">Gallery</a></p>
+        <p><a href="booking.html">Book Table</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <button class="btn" onclick="sayStart()">Get Started</button>
+    </header>
+
+    <section class="page-section">
+      <h1 class="page-title">Reserve a Table</h1>
+      <p class="page-subtitle">Book your spot in advance for group lunches or evening chai sessions</p>
+
+      <div class="contact-container">
+        <form class="contact-form" onsubmit="confirmBooking(event)">
+          <h2>Reservation Details</h2>
+          <input type="text" placeholder="Your Full Name" required />
+          <input type="number" placeholder="Number of Guests (1 - 12)" min="1" max="12" required />
+          <input type="date" required />
+          <input type="time" required />
+          <button type="submit" class="order">Confirm Table</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <h1 class="fcontact">Contact Us</h1>
+      <p><a href="mailto:something@gmail.com">something@gmail.com</a></p>
+      <p>Thank you for visiting our website</p>
+    </footer>
+
+    <script>
+      function sayStart() {
+        window.alert("Reserve your table in seconds!");
+      }
+      function confirmBooking(event) {
+        event.preventDefault();
+        window.alert("Table Reserved! We look forward to hosting you at Cafe Shop.");
+      }
+    </script>
+  </body>
+</html>

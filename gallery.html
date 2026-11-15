@@ -1,0 +1,98 @@
+<!-- Muhammad Abdullah
+26i-3255
+Section E -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cafe Shop - Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="subnav">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="gallery.html">Gallery</a></p>
+        <p><a href="booking.html">Book Table</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <button class="btn" onclick="sayStart()">Get Started</button>
+    </header>
+
+    <section class="gallery-section">
+      <h1 class="gallery-title">Our Cafe Gallery</h1>
+      <p class="gallery-subtitle">A glimpse into our freshly prepared dishes and cozy atmosphere</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img
+            src="https://i.pinimg.com/736x/1a/59/f0/1a59f0e988c227075ce7a6e261f9f362.jpg"
+            alt="Special Chicken Biryani"
+          />
+          <p class="caption">Special Chicken Biryani</p>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80"
+            alt="Biryani with Shami Kabab"
+          />
+          <p class="caption">Chicken Biryani with Kabab</p>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&w=600&q=80"
+            alt="Traditional Karak Chai"
+          />
+          <p class="caption">Signature Hot Chai</p>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://media.istockphoto.com/id/1428594094/photo/empty-coffee-shop-interior-with-wooden-tables-coffee-maker-pastries-and-pendant-lights.jpg?s=612x612&w=0&k=20&c=dMqeYCJDs3BeBP_jv93qHRISDt-54895SPoVc6_oJt4="
+            alt="Cozy Cafe Seating"
+          />
+          <p class="caption">Warm Indoor Seating Area</p>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80"
+            alt="Freshly Brewed Coffee"
+          />
+          <p class="caption">Freshly Brewed Espresso</p>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80"
+            alt="Evening Cafe Pastries"
+          />
+          <p class="caption">Freshly Baked Evening Snacks</p>
+        </div>
+      </div>
+
+      <div class="corder">
+        <button class="order" onclick="showSpecialOffer()">Claim Gallery Discount</button>
+      </div>
+    </section>
+
+    <footer>
+      <h1 class="fcontact">Contact Us</h1>
+      <p><a href="mailto:something@gmail.com">something@gmail.com</a></p>
+      <p>Thank you for visiting our website</p>
+    </footer>
+
+    <script>
+      function sayStart() {
+        console.log("Say Start button was clicked");
+        window.alert("Explore our 6 signature gallery highlights below!");
+      }
+      function showSpecialOffer() {
+        console.log("Gallery discount button was clicked");
+        window.alert("Use promo code FAST10 at the counter for 10% off your Biryani & Chai order!");
+      }
+    </script>
+  </body>
+</html>

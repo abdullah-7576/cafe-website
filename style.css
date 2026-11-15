@@ -1,14 +1,20 @@
+/* Muhammad Abdullah
+26i-3255
+Section E */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  /* font-weight: 400; */
+  box-sizing: border-box;
 }
-body{
+
+body {
   background-color: rgb(231, 231, 231);
 }
-header{
+
+header {
   height: 100px;
   display: flex;
   align-items: center;
@@ -17,41 +23,56 @@ header{
   padding-right: 40px;
   text-align: center;
 }
-.subnav{
+
+.subnav {
   display: flex;
   align-items: center;
 }
-header div p{
+
+header div p {
   padding-left: 40px;
   transition: all 0.15s;
 }
-.btn{
+
+header div p a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.15s;
+}
+
+header div p:hover,
+header div p a:hover {
+  color: rgb(194, 194, 194);
+  cursor: pointer;
+}
+
+.btn {
   border-radius: 25px;
   font-size: 15px;
-  padding: 0 10px;
+  padding: 0 15px;
   border: none;
   height: 40px;
   background-color: purple;
   color: white;
   transition: all 0.15s;
 }
-.btn:hover{
+
+.btn:hover {
   box-shadow: rgba(0, 0, 0, 0.301) 0px 5px 10px;
   cursor: pointer;
 }
-.btn:active{
+
+.btn:active {
   opacity: 0.7;
 }
-header div p:hover{
-  color: rgb(194, 194, 194);
-  cursor: pointer;
-}
-.maintext{
+
+.maintext {
   margin: 250px 100px;
   font-weight: 600;
   font-size: 100px;
 }
-.roll{
+
+.roll {
   padding: 10px 17px;
   border-radius: 10px;
   border: none;
@@ -59,72 +80,180 @@ header div p:hover{
   font-size: 20px;
   cursor: pointer;
 }
-.mainbody{
-    display: flex;
+
+.mainbody {
+  display: flex;
 }
-.table{
-    margin-left: 30%;
-    margin-top: 100px;
+
+.table {
+  margin-left: 30%;
+  margin-top: 100px;
 }
-table{
-    border: 2px solid black;
-    padding: 20px;
-    font-size: 50px;
-    
+
+table {
+  border: 2px solid black;
+  padding: 20px;
+  font-size: 50px;
 }
-td{
-    padding: 20px;
-}
-.tabletext{
+
+.tabletext {
   font-weight: 600;
   font-size: 100px;
 }
-td{
-    margin: 0;
-    padding: 0;
-    border: 2px solid black;
+
+td {
+  margin: 0;
+  padding: 10px 20px;
+  border: 2px solid black;
 }
 
-.order{
-    font-size: 32px;
-    border-radius: 25px;
-    padding: 0 10px;
-    border: none;
-    height: 70px;
-    background-color: purple;
-    color: white;
+.order {
+  font-size: 32px;
+  border-radius: 25px;
+  padding: 0 25px;
+  border: none;
+  height: 70px;
+  background-color: purple;
+  color: white;
+  transition: all 0.15s;
 }
-.corder{
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.corder {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.order:hover{
+
+.order:hover {
   box-shadow: rgba(0, 0, 0, 0.301) 0px 5px 10px;
   cursor: pointer;
 }
-.ccafeimage{
-    display: flex;
-    justify-content: center;
 
+.ccafeimage {
+  display: flex;
+  justify-content: center;
 }
-.cafeimage{
-    width: 97%;
-    border-radius: 10px;
-    border: 2px solid black;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-footer{
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    background-color: rgb(170, 94, 170);
-    padding: 20px;
-    height: 300px;
 
+.cafeimage {
+  width: 97%;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.fcontact{
-    margin-bottom: 100px;
-    text-decoration: underline;
+
+footer {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: rgb(170, 94, 170);
+  padding: 20px;
+  height: 300px;
+}
+
+.fcontact {
+  margin-bottom: 100px;
+  text-decoration: underline;
+}
+
+/* --- Gallery & Extra Pages Shared Layout --- */
+.gallery-section,
+.page-section {
+  padding: 40px 60px;
+  text-align: center;
+}
+
+.gallery-title,
+.page-title {
+  font-weight: 600;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.gallery-subtitle,
+.page-subtitle {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item,
+.info-card {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 15px;
+  transition: all 0.2s;
+}
+
+.info-card {
+  padding: 30px;
+}
+
+.gallery-item:hover,
+.info-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.301) 0px 5px 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 2px solid black;
+}
+
+.caption {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* --- Contact & Booking Form Styles --- */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+  text-align: left;
+}
+
+.contact-card,
+.contact-form {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 30px;
+  flex: 1;
+}
+
+.contact-card h2,
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.contact-card p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 16px;
 }

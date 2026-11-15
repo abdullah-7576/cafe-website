@@ -1,0 +1,64 @@
+<!-- Muhammad Abdullah
+26i-3255
+Section E -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cafe Shop - Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="subnav">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="gallery.html">Gallery</a></p>
+        <p><a href="booking.html">Book Table</a></p>
+        <p><a href="about.html">About</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+      <button class="btn" onclick="sayStart()">Get Started</button>
+    </header>
+
+    <section class="page-section">
+      <h1 class="page-title">Get In Touch</h1>
+      <p class="page-subtitle">Have a question or want to place a bulk Biryani & Chai order? Reach out below!</p>
+
+      <div class="contact-container">
+        <div class="contact-card">
+          <h2>Cafe Information</h2>
+          <p><strong>Location:</strong> Main Commercial Market, Islamabad</p>
+          <p><strong>Phone:</strong> +92 300 1234567</p>
+          <p><strong>Email:</strong> something@gmail.com</p>
+          <p><strong>Hours:</strong> Mon – Sun: 11:00 AM – 11:30 PM</p>
+        </div>
+
+        <form class="contact-form" onsubmit="sendMessage(event)">
+          <h2>Send a Message</h2>
+          <input type="text" placeholder="Your Full Name" required />
+          <input type="email" placeholder="Your Email Address" required />
+          <input type="text" placeholder="Favorite Dish (e.g., Chicken Biryani, Chai)" />
+          <textarea rows="4" placeholder="Your Message or Order Details..." required></textarea>
+          <button type="submit" class="order">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <h1 class="fcontact">Contact Us</h1>
+      <p><a href="mailto:something@gmail.com">something@gmail.com</a></p>
+      <p>Thank you for visiting our website</p>
+    </footer>
+
+    <script>
+      function sayStart() {
+        console.log("Say Start button was clicked");
+        window.alert("Fill out the form below to contact Cafe Shop!");
+      }
+      function sendMessage(event) {
+        event.preventDefault();
+        console.log("Contact form submitted");
+        window.alert("Thank you for contacting Cafe Shop! Your message has been received.");
+      }
+    </script>
+  </body>
+</html>
